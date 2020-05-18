@@ -1,3 +1,16 @@
+#########################################################################################################################
+README
+This dsl script is capable for migrating docker images from one registry to another registry. I have used multiline string parameter and choice parameters.
+when you run this pipeline job we have to select build with parameters. 
+
+1.we have to provide reponame:tagname of the docker image in the string field. 
+2.We have to select sourceresgistry with port in the source field.
+3.We have to choose a docker registry as destination this can be AWS or Azure.
+
+###########################################################################################################################
+
+
+
 node
 {
 properties([parameters([text(defaultValue: '''repo:tag
